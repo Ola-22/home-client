@@ -1,0 +1,15 @@
+
+@import "../../styles/variable";
+
+.footer{
+  background-color: $greenColor;
+  height: 41px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $whiteColor;
+  h6{
+    font-size: 12px;
+    margin-left: 6px;
+  }
+}
