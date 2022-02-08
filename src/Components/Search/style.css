@@ -1,0 +1,47 @@
+.flexBox, .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search {
+  width: 343px;
+  height: 52px;
+  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+  border-radius: 8px;
+  margin: 24px 0 27px 16px;
+}
+
+.search input {
+  border: none;
+  outline: none;
+}
+
+.search input::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.search input:-ms-input-placeholder {
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.search input::-ms-input-placeholder {
+  font-size: 14px;
+  color: #8f8f8f;
+}
+
+.search input::placeholder {
+  font-size: 14px;
+  color: #8f8f8f;
+}
+/*# sourceMappingURL=style.css.map */
