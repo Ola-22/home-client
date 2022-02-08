@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Footer from "./Components/Footer";
+import Search from "./Components/Search";
+import ServiceProduct from "./Components/ServiceProduct";
+import DataProvider from "./Context/DataProvider";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomeServices from "./pages/HomeServices";
+import HomePage from "./pages/HomePage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <DataProvider>
+      <div className="App">
+        <BrowserRouter>
+          {/* <Search /> */}
+          <Routes>
+            <Route path="/home" element={<HomeServices />} />
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+          {/* <img src="/images/banner.png" alt="" style={{ marginLeft: "16px" }} />
+          <div>
+            <ServiceProduct />
+          </div>
+          <Footer /> */}
+        </BrowserRouter>
+      </div>
+    </DataProvider>
   );
 }
 
