@@ -1,0 +1,20 @@
+@import "../../styles/main";
+@import "../../styles/variable";
+
+
+.search{
+  width: 343px;
+  height: 52px;
+  box-shadow: 0 12px 8px rgba(0,0,0,0.07);
+  border-radius: 8px;
+  @extend .flexBox;
+  margin: 24px 0 27px 16px;
+  & input{
+    border: none;
+    outline: none;
+    &::placeholder{
+      font-size: 14px;
+      color: $grayColor;
+    }
+  }
+}
