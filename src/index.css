@@ -7,3 +7,10 @@
 .App{
   width: 375px;
 }
+
+.title-pages{
+  font-size: 14px;
+  color: #232323;
+  margin-top: 29px;
+  margin-left: 15px;
+}
