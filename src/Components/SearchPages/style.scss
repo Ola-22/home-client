@@ -1,0 +1,40 @@
+@import "../../styles/variable";
+
+.search-pages{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  margin-top: 20px;
+  .home-back{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .background{
+      background-color: $greenColor;
+      width: 51px;
+      height: 51px;
+      border-radius: 10px;
+      box-shadow: 0 12px 8px rgba(0,0,0,0.078 );
+    }
+    & img{
+      position: absolute;
+    }
+  }
+
+  .input-search{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-shadow: 0 12px 8px rgba(0,0,0,0.078 );
+    width: 279px;
+    height: 52px;
+    border-radius: 10px;
+
+    & input{
+      border: none;
+      outline: none;
+    }
+  }
+}
