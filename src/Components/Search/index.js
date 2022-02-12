@@ -23,7 +23,7 @@ export default function Search() {
         type="text"
         placeholder="Search for a service"
       />
-      {searchService.length != 0 &&
+      {searchService.length !== 0 &&
         searchService.map((service) => (
           <h2 key={service.id}>{service.title}</h2>
         ))}
