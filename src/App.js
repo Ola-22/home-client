@@ -1,7 +1,7 @@
 import "./App.css";
-import Footer from "./Components/Footer";
-import Search from "./Components/Search";
-import ServiceProduct from "./Components/ServiceProduct";
+// import Footer from "./Components/Footer";
+// import Search from "./Components/Search";
+// import ServiceProduct from "./Components/ServiceProduct";
 import DataProvider from "./Context/DataProvider";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeServices from "./pages/HomeServices";
