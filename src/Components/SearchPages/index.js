@@ -1,13 +1,13 @@
 import "./style.css";
 import { Link } from "react-router-dom";
 
-export default function SearchPages({ onChange }) {
+export default function SearchPages({ onChange, imgSrc }) {
   return (
     <div className="search-pages">
       <Link to="/">
         <div className="home-back">
           <div className="background" />
-          <img src="/images/Home.png" alt="" />{" "}
+          <img src={imgSrc} alt="" />{" "}
         </div>
       </Link>
       <div className="input-search">
