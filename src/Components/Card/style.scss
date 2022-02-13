@@ -1,0 +1,59 @@
+@import "../../styles/variable";
+
+.card{
+  width: 343px;
+  height: 91px;
+  box-shadow: 0 12px 8px rgba(0,0,0,0.07);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+
+  & h2, h6{
+    font-size: 12px;
+    color: $blueColor;
+  }
+
+  & h6{
+    margin-left: 4px;
+  }
+
+  & h4{
+    color: $greenColor;
+    & span{
+      font-size: 12px;
+      color: $QARColor;
+    }
+  }
+
+  
+.rating{
+  color: $yellowColor;
+  & svg{
+  width: 12px;
+  height: 12px; 
+
+  &:not(:first-of-type){
+    margin-left: 4px;
+  }
+  }
+}
+
+.rateVal{
+  font-size: 10px;
+  color: white;
+  display: flex;
+
+  & span:first-of-type{
+    margin-right: 2px;
+    margin-left: 10px;
+  }
+}
+}
+
+.paragraph{
+  width: 340px;
+  height: 42px;
+  font-size: 12px;
+  color: $whiteColor;
+}
