@@ -1,0 +1,67 @@
+.card {
+  width: 343px;
+  height: 91px;
+  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  border-radius: 10px;
+}
+
+.card h2, .card h6 {
+  font-size: 12px;
+  color: #202046;
+}
+
+.card h6 {
+  margin-left: 4px;
+}
+
+.card h4 {
+  color: #46b494;
+}
+
+.card h4 span {
+  font-size: 12px;
+  color: #222a47;
+}
+
+.card .rating {
+  color: #ffc107;
+}
+
+.card .rating svg {
+  width: 12px;
+  height: 12px;
+}
+
+.card .rating svg:not(:first-of-type) {
+  margin-left: 4px;
+}
+
+.card .rateVal {
+  font-size: 10px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card .rateVal span:first-of-type {
+  margin-right: 2px;
+  margin-left: 10px;
+}
+
+.paragraph {
+  width: 340px;
+  height: 42px;
+  font-size: 12px;
+  color: #ffffff;
+}
+/*# sourceMappingURL=style.css.map */
