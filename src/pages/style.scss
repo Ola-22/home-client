@@ -1,0 +1,50 @@
+@import "../styles/variable";
+
+.search-content{
+  height: 237px;
+    background-color: #46b494;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .input-search,.search-pages .home-back .background{
+      background-color: $whiteColor;
+    }
+
+    .card{
+      box-shadow: none;
+      justify-content: space-between;
+    }
+}
+
+.services{
+  .card{
+    position: relative;
+    box-shadow: none;
+  }
+  .paragraph{
+    color: #222a47;
+    margin-bottom: 1em;
+  }
+  .rateVal{
+    color: #202046;
+    margin-left: -10em;
+    margin-top: 1em;
+    & span{
+      margin-left: 1em;
+    }
+  }
+
+  .card-pages{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 12px 8px rgba(0,0,0,0.07);
+    height: 123px;
+
+    &:not(:first-of-type){
+      margin-top: 20px;
+    }
+  }
+}

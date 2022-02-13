@@ -1,0 +1,68 @@
+.search-content {
+  height: 237px;
+  background-color: #46b494;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.search-content .input-search, .search-content .search-pages .home-back .background {
+  background-color: #ffffff;
+}
+
+.search-content .card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.services .card {
+  position: relative;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.services .paragraph {
+  color: #222a47;
+  margin-bottom: 1em;
+}
+
+.services .rateVal {
+  color: #202046;
+  margin-left: -10em;
+  margin-top: 1em;
+}
+
+.services .rateVal span {
+  margin-left: 1em;
+}
+
+.services .card-pages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+  height: 123px;
+}
+
+.services .card-pages:not(:first-of-type) {
+  margin-top: 20px;
+}
+/*# sourceMappingURL=style.css.map */
