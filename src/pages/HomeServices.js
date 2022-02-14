@@ -17,8 +17,6 @@ export default function HomeServices() {
       return val.title.toLowerCase().includes(searchWord.toLowerCase());
     });
     setSearchService(newFilter);
-
-    console.log(newFilter);
   };
 
   return (
@@ -45,7 +43,7 @@ export default function HomeServices() {
         </div>
       )}
 
-      {searchService.length == 0 && (
+      {searchService.length === 0 && (
         <div className="service-product">
           <div className="Group-container" style={{ marginTop: "2em" }}>
             <>
