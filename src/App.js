@@ -6,6 +6,8 @@ import HomePage from "./pages/HomePage";
 import HomeDetails from "./pages/HomeDetails";
 import Services from "./pages/Services";
 import ServiceCleaning from "./pages/ServiceCleaning";
+import Request from "./pages/Request";
+import Payment from "./pages/Payment";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
             <Route path="/home/:id" element={<HomeDetails />} />
             <Route path="/home/:id/:id" element={<Services />} />
             <Route path="/home/:id/:id/:id" element={<ServiceCleaning />} />
+            <Route path="/request" element={<Request />} />
+            <Route path="/payment" element={<Payment />} />
 
             <Route path="/" element={<HomePage />} />
           </Routes>
