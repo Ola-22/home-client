@@ -18,6 +18,10 @@
 }
 
 .services{
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   .card{
     position: relative;
     box-shadow: none;
@@ -25,6 +29,10 @@
   .paragraph{
     color: #222a47;
     margin-bottom: 1em;
+    width: 319px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
   }
   .rateVal{
     color: #202046;
@@ -42,9 +50,111 @@
     position: relative;
     box-shadow: 0 12px 8px rgba(0,0,0,0.07);
     height: 123px;
+    border-radius: 10px;
+    width: 343px;
 
     &:not(:first-of-type){
       margin-top: 20px;
     }
+  }
+}
+
+.title-service{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  & img{
+    margin-right: 1em;
+    margin-top: 1em;
+  }
+}
+
+.service-cleaning{
+  .paragraph{
+    width: 319px;
+    height: 111px;
+    line-height: 1.5;
+  }
+  .card-pages{
+    height: 189px;
+  }
+
+  .pick-time{
+    display: flex;
+    flex-direction: column;
+    width: 343px;
+    margin-top: 34px;
+
+    & h6{
+      font-size: 12px;
+      color: $TimeColor;
+    }
+    & textarea{
+      height: 143px;
+      resize: none;
+      margin-top: 1em;
+    }
+    & textarea, input{
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 12px 8px rgba(0,0,0,0.07);
+      outline: none;
+      padding: 1em;
+    }
+
+    &> div:first-of-type{
+      display: flex;
+      justify-content: space-between;
+      & input{
+        width: 163px;
+        height: 52px;
+      }
+    }
+  }
+}
+
+
+.requestBtn{
+  width: 343px;
+  height: 50px;
+  background-color: $greenColor;
+  box-shadow: 0 12px 8px rgba(0,0,0,0.07);
+  border: none;
+  border-radius: 10px;
+  margin-top: 1em;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.request .services > div:first-of-type{
+  display: flex;
+  width: 343px;
+  flex-direction: column;
+  position: relative;
+  & h6{
+    margin-top: 25px;
+    font-size: 12px;
+    color: $blueColor;
+  }
+  & input{
+    height: 52px;
+    border: none;
+    box-shadow: 0 12px 8px rgba(0,0,0,0.07);
+    border-radius: 10px;
+    margin-top: 7px;
+    padding-left: 40px;
+    outline: none;
+  }
+  & button{
+    position: fixed;
+    bottom: 95px;
+  }
+
+  & img{
+    position: absolute;
+    top: 65%;
+    left: 19px;
   }
 }

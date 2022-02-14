@@ -24,6 +24,22 @@
           justify-content: space-between;
 }
 
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .services .card {
   position: relative;
   -webkit-box-shadow: none;
@@ -33,6 +49,10 @@
 .services .paragraph {
   color: #222a47;
   margin-bottom: 1em;
+  width: 319px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 30px;
 }
 
 .services .rateVal {
@@ -60,9 +80,138 @@
   -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
           box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
   height: 123px;
+  border-radius: 10px;
+  width: 343px;
 }
 
 .services .card-pages:not(:first-of-type) {
   margin-top: 20px;
+}
+
+.title-service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title-service img {
+  margin-right: 1em;
+  margin-top: 1em;
+}
+
+.service-cleaning .paragraph {
+  width: 319px;
+  height: 111px;
+  line-height: 1.5;
+}
+
+.service-cleaning .card-pages {
+  height: 189px;
+}
+
+.service-cleaning .pick-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 343px;
+  margin-top: 34px;
+}
+
+.service-cleaning .pick-time h6 {
+  font-size: 12px;
+  color: #202046;
+}
+
+.service-cleaning .pick-time textarea {
+  height: 143px;
+  resize: none;
+  margin-top: 1em;
+}
+
+.service-cleaning .pick-time textarea, .service-cleaning .pick-time input {
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+  outline: none;
+  padding: 1em;
+}
+
+.service-cleaning .pick-time > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.service-cleaning .pick-time > div:first-of-type input {
+  width: 163px;
+  height: 52px;
+}
+
+.requestBtn {
+  width: 343px;
+  height: 50px;
+  background-color: #46b494;
+  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+  border: none;
+  border-radius: 10px;
+  margin-top: 1em;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.request .services > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 343px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+.request .services > div:first-of-type h6 {
+  margin-top: 25px;
+  font-size: 12px;
+  color: #202046;
+}
+
+.request .services > div:first-of-type input {
+  height: 52px;
+  border: none;
+  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  margin-top: 7px;
+  padding-left: 40px;
+  outline: none;
+}
+
+.request .services > div:first-of-type button {
+  position: fixed;
+  bottom: 95px;
+}
+
+.request .services > div:first-of-type img {
+  position: absolute;
+  top: 65%;
+  left: 19px;
 }
 /*# sourceMappingURL=style.css.map */
