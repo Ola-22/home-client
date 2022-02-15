@@ -22,6 +22,7 @@ button, input, textarea {
 }
 
 .search-content {
+  width: 375px;
   height: 237px;
   background-color: #46b494;
   display: -webkit-box;
@@ -109,6 +110,10 @@ button, input, textarea {
 
 .services .card-pages:not(:first-of-type) {
   margin-top: 20px;
+}
+
+.services .card-pages:last-of-type {
+  margin-bottom: 20px;
 }
 
 .title-service {
