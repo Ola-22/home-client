@@ -10,8 +10,7 @@
   @extend .flexBox;
   margin: 24px 0 27px 16px;
   & input{
-    border: none;
-    outline: none;
+    box-shadow: none;
     &::placeholder{
       font-size: 14px;
       color: $grayColor;
