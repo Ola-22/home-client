@@ -1,4 +1,5 @@
 @import "../styles/variable";
+@import "../styles/main";
 
 .search-content{
   height: 237px;
@@ -98,10 +99,6 @@
       }
     }
     & textarea, input{
-      border-radius: 10px;
-      border: none;
-      box-shadow: 0 12px 8px rgba(0,0,0,0.07);
-      outline: none;
       padding: 1em;
     }
 
@@ -121,13 +118,9 @@
   width: 343px;
   height: 50px;
   background-color: $greenColor;
-  box-shadow: 0 12px 8px rgba(0,0,0,0.07);
-  border: none;
-  border-radius: 10px;
   margin-top: 1em;
   color: white;
   font-size: 14px;
-  cursor: pointer;
 }
 
 
@@ -151,10 +144,9 @@
   }
   & input{
     height: 52px;
-    border: none;
     margin-top: 7px;
     padding-left: 20px;
-    outline: none;
+    box-shadow: none;
   }
   .btn{
     position: fixed;
@@ -166,23 +158,54 @@
   }
 
   .btn-payment{
-    display: flex;
     justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+    @extend .flexBox;
     margin-top: 7px;
     & button{
-      border:none;
-      outline: none;
-      box-shadow: 0 12px 8px rgba(0,0,0,0.07);
       width: 163px;
       height: 52px;
-      background-color: $whiteColor;
-      border-radius: 10px;
-      cursor: pointer;
       &:first-of-type{
         background-color: $greenColor;
         color: $whiteColor;
+      }
+    }
+  }
+
+  .payment-method{
+    justify-content: space-between;
+    margin-top: 17px;
+    @extend .flexBox;
+    & button{
+      width: 106px;
+      height: 59px;
+    }
+    & img{
+      margin-left: 0;
+    }
+  }
+
+  .card-box{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+
+    & .card-btn{
+      height: 46px;
+      border: 1px solid $borderColor;
+      border-radius: 10px;
+      padding: 14px;
+      margin-top: 4px;
+      &:first-of-type{
+      width: 344px;
+      
+      }
+    }
+    .expiration-box{
+      display: flex;
+      justify-content: space-between;
+      & div:last-of-type{
+        width: 130px;
+        
       }
     }
   }
