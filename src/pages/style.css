@@ -22,7 +22,6 @@ button, input, textarea {
 }
 
 .search-content {
-  width: 375px;
   height: 237px;
   background-color: #46b494;
   display: -webkit-box;
@@ -32,8 +31,6 @@ button, input, textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
 .search-content .input-search, .search-content .search-pages .home-back .background {
