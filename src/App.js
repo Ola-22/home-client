@@ -8,6 +8,7 @@ import Services from "./pages/Services";
 import ServiceCleaning from "./pages/ServiceCleaning";
 import Request from "./pages/Request";
 import Payment from "./pages/Payment";
+import "./styles/main.scss";
 
 function App() {
   return (
