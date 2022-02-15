@@ -138,6 +138,22 @@
   margin-top: 1em;
 }
 
+.service-cleaning .pick-time textarea::-webkit-input-placeholder {
+  color: #222a47;
+}
+
+.service-cleaning .pick-time textarea:-ms-input-placeholder {
+  color: #222a47;
+}
+
+.service-cleaning .pick-time textarea::-ms-input-placeholder {
+  color: #222a47;
+}
+
+.service-cleaning .pick-time textarea::placeholder {
+  color: #222a47;
+}
+
 .service-cleaning .pick-time textarea, .service-cleaning .pick-time input {
   border-radius: 10px;
   border: none;
@@ -175,7 +191,7 @@
   cursor: pointer;
 }
 
-.request .services > div:first-of-type {
+.mobile-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -187,31 +203,73 @@
   position: relative;
 }
 
-.request .services > div:first-of-type h6 {
+.mobile-box > div:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 343px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+}
+
+.mobile-box h6 {
   margin-top: 25px;
   font-size: 12px;
   color: #202046;
 }
 
-.request .services > div:first-of-type input {
+.mobile-box input {
   height: 52px;
   border: none;
-  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
-  border-radius: 10px;
   margin-top: 7px;
-  padding-left: 40px;
+  padding-left: 20px;
   outline: none;
 }
 
-.request .services > div:first-of-type button {
+.mobile-box .btn {
   position: fixed;
   bottom: 95px;
 }
 
-.request .services > div:first-of-type img {
-  position: absolute;
-  top: 65%;
-  left: 19px;
+.mobile-box img {
+  margin-left: 19px;
+}
+
+.mobile-box .btn-payment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 7px;
+}
+
+.mobile-box .btn-payment button {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+  width: 163px;
+  height: 52px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.mobile-box .btn-payment button:first-of-type {
+  background-color: #46b494;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

@@ -93,6 +93,9 @@
       height: 143px;
       resize: none;
       margin-top: 1em;
+      &::placeholder{
+        color: $QARColor;
+      }
     }
     & textarea, input{
       border-radius: 10px;
@@ -128,11 +131,19 @@
 }
 
 
-.request .services > div:first-of-type{
+.mobile-box{
   display: flex;
   width: 343px;
   flex-direction: column;
   position: relative;
+  & >div:first-of-type{
+    display: flex;
+    flex-wrap: wrap;
+    width: 343px;
+    align-items: center;
+    box-shadow: 0 12px 8px rgba(0,0,0,0.07);
+    border-radius: 10px;
+  }
   & h6{
     margin-top: 25px;
     font-size: 12px;
@@ -141,20 +152,38 @@
   & input{
     height: 52px;
     border: none;
-    box-shadow: 0 12px 8px rgba(0,0,0,0.07);
-    border-radius: 10px;
     margin-top: 7px;
-    padding-left: 40px;
+    padding-left: 20px;
     outline: none;
   }
-  & button{
+  .btn{
     position: fixed;
     bottom: 95px;
   }
 
   & img{
-    position: absolute;
-    top: 65%;
-    left: 19px;
+    margin-left: 19px;
+  }
+
+  .btn-payment{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 7px;
+    & button{
+      border:none;
+      outline: none;
+      box-shadow: 0 12px 8px rgba(0,0,0,0.07);
+      width: 163px;
+      height: 52px;
+      background-color: $whiteColor;
+      border-radius: 10px;
+      cursor: pointer;
+      &:first-of-type{
+        background-color: $greenColor;
+        color: $whiteColor;
+      }
+    }
   }
 }

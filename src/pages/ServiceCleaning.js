@@ -82,11 +82,11 @@ export default function ServiceCleaning() {
         <div className="pick-time">
           <h6>Pick time & date:</h6>
           <div style={{ display: "flex" }}>
-            <input value="DD/MM/" type="date" />
-            <input type="time" />
+            <input type="date" placeholder="Date" value="" />
+            <input type="time" placeholder="Time" />
           </div>
 
-          <textarea name="w3review">Notes</textarea>
+          <textarea placeholder="Notes" name="w3review" />
         </div>
         <Link to="/request">
           <button className="requestBtn">Request</button>
