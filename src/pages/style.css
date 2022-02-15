@@ -1,3 +1,26 @@
+.flexBox, .mobile-box .btn-payment, .mobile-box .payment-method {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+button, input, textarea {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
 .search-content {
   height: 237px;
   background-color: #46b494;
@@ -155,11 +178,6 @@
 }
 
 .service-cleaning .pick-time textarea, .service-cleaning .pick-time input {
-  border-radius: 10px;
-  border: none;
-  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
-  outline: none;
   padding: 1em;
 }
 
@@ -181,14 +199,9 @@
   width: 343px;
   height: 50px;
   background-color: #46b494;
-  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
-  border: none;
-  border-radius: 10px;
   margin-top: 1em;
   color: white;
   font-size: 14px;
-  cursor: pointer;
 }
 
 .mobile-box {
@@ -226,10 +239,10 @@
 
 .mobile-box input {
   height: 52px;
-  border: none;
   margin-top: 7px;
   padding-left: 20px;
-  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .mobile-box .btn {
@@ -242,34 +255,73 @@
 }
 
 .mobile-box .btn-payment {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 7px;
+}
+
+.mobile-box .btn-payment button {
+  width: 163px;
+  height: 52px;
+}
+
+.mobile-box .btn-payment button:first-of-type {
+  background-color: #46b494;
+  color: #ffffff;
+}
+
+.mobile-box .payment-method {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 17px;
+}
+
+.mobile-box .payment-method button {
+  width: 106px;
+  height: 59px;
+}
+
+.mobile-box .payment-method img {
+  margin-left: 0;
+}
+
+.mobile-box .card-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.mobile-box .card-box .card-btn {
+  height: 46px;
+  border: 1px solid #b8b7b7;
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 4px;
+}
+
+.mobile-box .card-box .card-btn:first-of-type {
+  width: 344px;
+}
+
+.mobile-box .card-box .expiration-box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin-top: 7px;
 }
 
-.mobile-box .btn-payment button {
-  border: none;
-  outline: none;
-  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
-          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
-  width: 163px;
-  height: 52px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.mobile-box .btn-payment button:first-of-type {
-  background-color: #46b494;
-  color: #ffffff;
+.mobile-box .card-box .expiration-box div:last-of-type {
+  width: 130px;
 }
 /*# sourceMappingURL=style.css.map */
