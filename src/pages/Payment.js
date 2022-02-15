@@ -1,8 +1,12 @@
 import SearchPages from "../Components/SearchPages";
 import Footer from "../Components/Footer";
 import { loadStripe } from "@stripe/stripe-js";
-import { Elements } from "@stripe/react-stripe-js";
-import { CardCvcElement } from "@stripe/react-stripe-js";
+import {
+  CardCvcElement,
+  CardNumberElement,
+  CardExpiryElement,
+  Elements,
+} from "@stripe/react-stripe-js";
 import { Link } from "react-router-dom";
 
 const promise = loadStripe(
@@ -26,7 +30,47 @@ export default function Payment() {
               <button>Online Payment</button>
               <button>Cash</button>
             </div>
-            {/* <CardCvcElement /> */}
+            <div className="payment-method">
+              <button>
+                <img src="/images/masterCard.png" alt="" />
+              </button>
+              <button>
+                <img src="/images/Visa.png" alt="" />
+              </button>
+              <button>
+                <img src="/images/payPal.png" alt="" />
+              </button>
+            </div>
+            <h6>Card Number</h6>
+            <div className="card-box">
+              <div className="card-btn">
+                <CardNumberElement />
+              </div>
+              <div className="expiration-box">
+                <div>
+                  <h6>Expiration</h6>
+                  <div>
+                    <CardExpiryElement className="card-btn" />
+                  </div>
+                </div>
+                <div>
+                  <h6>Security Code</h6>
+                  <CardCvcElement className="card-btn" />
+                </div>
+              </div>
+              <div>
+                <h6>Postal / ZIP code</h6>
+                <input
+                  type="text"
+                  placeholder="0000"
+                  className="card-btn"
+                  style={{ width: "149px" }}
+                />
+              </div>
+              <button style={{ marginTop: "24px" }} className="requestBtn">
+                Confirm Request
+              </button>
+            </div>
           </div>
         </div>
 
