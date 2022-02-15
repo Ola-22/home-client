@@ -34,7 +34,7 @@ export default function HomeDetails() {
           >
             <>
               {searchService.map((service) => (
-                <div>
+                <div key={service._id}>
                   <Link to={`/home/${service._id}/${service._id}`}>
                     <Card
                       imgService={service.imgService}
@@ -56,10 +56,12 @@ export default function HomeDetails() {
         <>
           {services.HomeServices.map((service) => (
             <div
+              key={service._id}
               style={{
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                width: "375px",
               }}
             >
               <Link to={`/home/${service._id}/${service._id}`}>
