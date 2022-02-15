@@ -7,14 +7,16 @@ export default function Request() {
     <div className="request">
       <SearchPages imgSrc="/images/Home.png" />
       <div className="services">
-        <div>
+        <div className="mobile-box">
           <h6>Service request details:</h6>
 
-          <img width="11" height="17" src="/images/phone.png" alt="" />
-          <input type="tel" placeholder="Mobile Number" />
+          <div>
+            <img width="11" height="17" src="/images/phone.png" alt="" />
+            <input type="tel" placeholder="Mobile Number" />
+          </div>
 
           <Link to="/payment">
-            <button className="requestBtn">Request</button>
+            <button className="requestBtn btn">Request</button>
           </Link>
         </div>
       </div>
