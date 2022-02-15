@@ -32,7 +32,7 @@ export default function HomeServices() {
           >
             <>
               {searchService.map((service) => (
-                <div style={{ marginLeft: "20px" }}>
+                <div style={{ marginLeft: "20px" }} key={service._id}>
                   <Link to={`/home/${service._id}`}>
                     <Group src={service.img} title={service.title} />
                   </Link>
@@ -48,7 +48,7 @@ export default function HomeServices() {
           <div className="Group-container" style={{ marginTop: "2em" }}>
             <>
               {services.HomeServices.map((service) => (
-                <Link to={`/home/${service._id}`}>
+                <Link to={`/home/${service._id}`} key={service._id}>
                   <Group
                     key={service._id}
                     src={service.img}

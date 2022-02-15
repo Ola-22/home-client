@@ -15,10 +15,11 @@ export default function ServiceCleaning() {
 
   const handleFilter = (e) => {
     const searchWord = e.target.value;
-    const newFilter = services.HomeServices.filter((val) => {
-      return val.ServiceOne.toLowerCase().includes(searchWord.toLowerCase());
+    const newFilter = services.HomeServices[0].serviceClean.filter((val) => {
+      return val.title.toLowerCase().includes(searchWord.toLowerCase());
     });
     setSearchService(newFilter);
+    console.log(services.HomeServices[0].serviceClean);
   };
 
   const { id } = useParams();
@@ -40,7 +41,7 @@ export default function ServiceCleaning() {
             >
               <>
                 {searchService.map((service) => (
-                  <div>
+                  <div key={service._id}>
                     <Link to={`/home/${service._id}/${service._id}`}>
                       <Card
                         imgService={service.img}
@@ -58,7 +59,7 @@ export default function ServiceCleaning() {
             </div>
           </div>
         )}
-        {searchService.length === 0 && (
+        {searchService.length == 0 && (
           <>
             {Details.map((service) => (
               <div key={service._id}>
@@ -77,20 +78,20 @@ export default function ServiceCleaning() {
                 </Link>
               </div>
             ))}
+            <div className="pick-time">
+              <h6>Pick time & date:</h6>
+              <div style={{ display: "flex" }}>
+                <input type="date" placeholder="Date" value="" />
+                <input type="time" placeholder="Time" />
+              </div>
+
+              <textarea placeholder="Notes" name="w3review" />
+            </div>
+            <Link to="/request">
+              <button className="requestBtn">Request</button>
+            </Link>
           </>
         )}
-        <div className="pick-time">
-          <h6>Pick time & date:</h6>
-          <div style={{ display: "flex" }}>
-            <input type="date" placeholder="Date" value="" />
-            <input type="time" placeholder="Time" />
-          </div>
-
-          <textarea placeholder="Notes" name="w3review" />
-        </div>
-        <Link to="/request">
-          <button className="requestBtn">Request</button>
-        </Link>
       </div>
 
       <div style={{ position: "fixed", width: "375px", bottom: "0" }}>
