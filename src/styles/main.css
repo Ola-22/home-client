@@ -10,4 +10,14 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+button, input, textarea {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+          box-shadow: 0 12px 8px rgba(0, 0, 0, 0.07);
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
 /*# sourceMappingURL=main.css.map */
