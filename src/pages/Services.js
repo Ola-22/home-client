@@ -30,7 +30,13 @@ export default function Services() {
 
   // console.log(services.HomeServices[0].serviceClean);
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "flex-start",
+      }}
+    >
       <div className="search-content">
         <SearchPages imgSrc="/images/Home2.png" onChange={handleFilter} />
 
