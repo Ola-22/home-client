@@ -20,7 +20,7 @@ export default function Card({
         <img src={imgService} alt="" />
         <div>
           <h2>{title}</h2>
-          <div>{ratings && <Rating rating={rating} />}</div>
+          <div>{ratings && <Rating onClick="" rating={rating} />}</div>
 
           <div style={{ display: "flex", alignItems: "center" }}>
             <img src={imgLocation} alt="" />
