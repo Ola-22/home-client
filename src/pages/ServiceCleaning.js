@@ -19,30 +19,25 @@ export default function ServiceCleaning() {
       return val.title.toLowerCase().includes(searchWord.toLowerCase());
     });
     setSearchService(newFilter);
-    console.log(services.HomeServices[0].serviceClean);
+    console.log(searchService);
   };
 
   const { id } = useParams();
 
-  const Details = services.HomeServices[0].serviceClean.filter(
-    (service, index) => {
-      return service._id === id;
-    }
-  );
+  const Details = services.HomeServices[0].serviceClean.filter((service) => {
+    return service._id === id;
+  });
   return (
     <div className="service-cleaning">
       <SearchPages imgSrc="/images/Home.png" onChange={handleFilter} />
       <div className="services">
         {searchService.length !== 0 && (
           <div className="service-product">
-            <div
-              className="Group-container"
-              style={{ marginTop: "2em", justifyContent: "flex-start" }}
-            >
-              <>
-                {searchService.map((service) => (
-                  <div key={service._id}>
-                    <Link to={`/home/${service._id}/${service._id}`}>
+            <>
+              {searchService.map((service) => (
+                <div key={service._id}>
+                  <Link to={`/home/${service._id}/${service._id}`}>
+                    <div className="card-pages" style={{ marginTop: "17px" }}>
                       <Card
                         imgService={service.img}
                         title={service.title}
@@ -51,19 +46,23 @@ export default function ServiceCleaning() {
                         paragraph={service.paragraph}
                         price={service.price}
                         review={service.review}
+                        address=""
+                        imgLocation=""
+                        rateImg=""
+                        rateVal=""
                       />
-                    </Link>
-                  </div>
-                ))}
-              </>
-            </div>
+                    </div>
+                  </Link>
+                </div>
+              ))}
+            </>
           </div>
         )}
-        {searchService.length == 0 && (
+        {searchService.length === 0 && (
           <>
             {Details.map((service) => (
               <div key={service._id}>
-                <Link to={`/home/${service._id}/${service._id}/${service._id}`}>
+                <Link to={`/home/${service._id}/${service._id}`}>
                   <div className="card-pages" style={{ marginTop: "17px" }}>
                     <Card
                       imgService={service.img}
@@ -73,23 +72,27 @@ export default function ServiceCleaning() {
                       paragraph={service.paragraph}
                       price={service.price}
                       review={service.review}
+                      address=""
+                      imgLocation=""
+                      rateImg=""
+                      rateVal=""
                     />
                   </div>
                 </Link>
+                <div className="pick-time">
+                  <h6>Pick time & date:</h6>
+                  <div style={{ display: "flex" }}>
+                    <input type="date" placeholder="Date" value="" />
+                    <input type="time" placeholder="Time" />
+                  </div>
+
+                  <textarea placeholder="Notes" name="w3review" />
+                </div>
+                <Link to="/request">
+                  <button className="requestBtn">Request</button>
+                </Link>
               </div>
             ))}
-            <div className="pick-time">
-              <h6>Pick time & date:</h6>
-              <div style={{ display: "flex" }}>
-                <input type="date" placeholder="Date" value="" />
-                <input type="time" placeholder="Time" />
-              </div>
-
-              <textarea placeholder="Notes" name="w3review" />
-            </div>
-            <Link to="/request">
-              <button className="requestBtn">Request</button>
-            </Link>
           </>
         )}
       </div>
