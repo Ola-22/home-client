@@ -19,16 +19,14 @@ export default function Services() {
       return val.title.toLowerCase().includes(searchWord.toLowerCase());
     });
     setSearchService(newFilter);
-    console.log(searchService);
   };
 
   const { id } = useParams();
 
-  const Details = services.HomeServices.filter((service, index) => {
+  const Details = services.HomeServices.filter((service) => {
     return service._id === id;
   });
 
-  // console.log(services.HomeServices[0].serviceClean);
   return (
     <div
       style={{
@@ -71,7 +69,7 @@ export default function Services() {
       <div className="services">
         {searchService.length !== 0 && (
           <>
-            {services.HomeServices[0].serviceClean.map((service) => (
+            {searchService.map((service) => (
               <div key={service._id}>
                 <Link to={`/home/${service._id}/${service._id}/${service._id}`}>
                   <div className="card-pages">
