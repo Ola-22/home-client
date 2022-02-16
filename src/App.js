@@ -10,7 +10,7 @@ import Request from "./pages/Request";
 import Payment from "./pages/Payment";
 import "./styles/main.scss";
 
-function App() {
+function App({ onChange }) {
   return (
     <DataProvider>
       <div className="App">
@@ -23,7 +23,7 @@ function App() {
             <Route path="/request" element={<Request />} />
             <Route path="/payment" element={<Payment />} />
 
-            <Route path="/" element={<HomePage />} />
+            <Route path="/" element={<HomePage onChange={onChange} />} />
           </Routes>
         </BrowserRouter>
       </div>
