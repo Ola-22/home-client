@@ -36,33 +36,6 @@ export default function ServiceCleaning() {
             <>
               {searchService.map((service) => (
                 <div key={service._id}>
-                  <Link to={`/home/${service._id}/${service._id}`}>
-                    <div className="card-pages" style={{ marginTop: "17px" }}>
-                      <Card
-                        imgService={service.img}
-                        title={service.title}
-                        ratings
-                        rating={service.Rating}
-                        paragraph={service.paragraph}
-                        price={service.price}
-                        review={service.review}
-                        address=""
-                        imgLocation=""
-                        rateImg=""
-                        rateVal=""
-                      />
-                    </div>
-                  </Link>
-                </div>
-              ))}
-            </>
-          </div>
-        )}
-        {searchService.length === 0 && (
-          <>
-            {Details.map((service) => (
-              <div key={service._id}>
-                <Link to={`/home/${service._id}/${service._id}`}>
                   <div className="card-pages" style={{ marginTop: "17px" }}>
                     <Card
                       imgService={service.img}
@@ -78,7 +51,44 @@ export default function ServiceCleaning() {
                       rateVal=""
                     />
                   </div>
-                </Link>
+
+                  <div className="pick-time">
+                    <h6>Pick time & date:</h6>
+                    <div style={{ display: "flex" }}>
+                      <input type="date" placeholder="Date" value="" />
+                      <input type="time" placeholder="Time" />
+                    </div>
+
+                    <textarea placeholder="Notes" name="w3review" />
+                  </div>
+                  <Link to="/request">
+                    <button className="requestBtn">Request</button>
+                  </Link>
+                </div>
+              ))}
+            </>
+          </div>
+        )}
+        {searchService.length === 0 && (
+          <>
+            {Details.map((service) => (
+              <div key={service._id}>
+                <div className="card-pages" style={{ marginTop: "17px" }}>
+                  <Card
+                    imgService={service.img}
+                    title={service.title}
+                    ratings
+                    rating={service.Rating}
+                    paragraph={service.paragraph}
+                    price={service.price}
+                    review={service.review}
+                    address=""
+                    imgLocation=""
+                    rateImg=""
+                    rateVal=""
+                  />
+                </div>
+
                 <div className="pick-time">
                   <h6>Pick time & date:</h6>
                   <div style={{ display: "flex" }}>
