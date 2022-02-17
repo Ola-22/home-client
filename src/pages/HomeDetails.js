@@ -25,45 +25,29 @@ export default function HomeDetails() {
       <h5 className="title-pages" style={{ alignSelf: "flex-start" }}>
         Home services
       </h5>
-
       {searchService.length !== 0 && (
-        <div className="service-product">
-          <div
-            className="Group-container"
-            style={{ justifyContent: "flex-start" }}
-          >
-            <>
-              {searchService.map((service) => (
-                <div key={service._id}>
-                  <Link to={`/home/${service._id}/${service._id}`}>
-                    <Card
-                      imgService={service.imgService}
-                      title={service.ServiceOne}
-                      ratings
-                      rating={service.Rating}
-                      address={service.address}
-                      imgLocation="/images/Location.png"
-                      price={service.price}
-                    />
-                  </Link>
-                </div>
-              ))}
-            </>
-          </div>
-        </div>
+        <>
+          {searchService.map((service) => (
+            <div className="App" key={service._id}>
+              <Link to={`/home/${service._id}/${service._id}`}>
+                <Card
+                  imgService={service.imgService}
+                  title={service.ServiceOne}
+                  ratings
+                  rating={service.Rating}
+                  address={service.address}
+                  imgLocation="/images/Location.png"
+                  price={service.price}
+                />
+              </Link>
+            </div>
+          ))}
+        </>
       )}
       {searchService.length === 0 && (
         <>
           {services.HomeServices.map((service) => (
-            <div
-              key={service._id}
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                width: "375px",
-              }}
-            >
+            <div className="App" key={service._id}>
               <Link to={`/home/${service._id}/${service._id}`}>
                 <Card
                   imgService={service.imgService}
