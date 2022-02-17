@@ -44,58 +44,61 @@ export default function HomeServices() {
       )}
 
       {searchService.length === 0 && (
-        <div className="service-product">
-          <div className="Group-container" style={{ marginTop: "2em" }}>
-            <>
-              {services.HomeServices.map((service) => (
-                <Link to={`/home/${service._id}`} key={service._id}>
+        <div className="App">
+          <div className="service-product">
+            <div className="Group-container" style={{ marginTop: "2em" }}>
+              <>
+                {services.HomeServices.map((service) => (
+                  <Link to={`/home/${service._id}`} key={service._id}>
+                    <Group
+                      key={service._id}
+                      src={service.img}
+                      title={service.title}
+                    />
+                  </Link>
+                ))}
+              </>
+            </div>
+
+            <div className="Group-container" style={{ marginTop: "2em" }}>
+              <>
+                {services.HomeServices.map((service) => (
                   <Group
                     key={service._id}
                     src={service.img}
                     title={service.title}
                   />
-                </Link>
-              ))}
-            </>
-          </div>
+                ))}
+              </>
+            </div>
 
-          <div className="Group-container" style={{ marginTop: "2em" }}>
-            <>
-              {services.HomeServices.map((service) => (
-                <Group
-                  key={service._id}
-                  src={service.img}
-                  title={service.title}
-                />
-              ))}
-            </>
-          </div>
+            <div className="Group-container" style={{ marginTop: "2em" }}>
+              <>
+                {services.HomeServices.map((service) => (
+                  <Group
+                    key={service._id}
+                    src={service.img}
+                    title={service.title}
+                  />
+                ))}
+              </>
+            </div>
 
-          <div className="Group-container" style={{ marginTop: "2em" }}>
-            <>
-              {services.HomeServices.map((service) => (
-                <Group
-                  key={service._id}
-                  src={service.img}
-                  title={service.title}
-                />
-              ))}
-            </>
-          </div>
-
-          <div className="Group-container" style={{ marginTop: "2em" }}>
-            <>
-              {services.HomeServices.map((service) => (
-                <Group
-                  key={service._id}
-                  src={service.img}
-                  title={service.title}
-                />
-              ))}
-            </>
+            <div className="Group-container" style={{ marginTop: "2em" }}>
+              <>
+                {services.HomeServices.map((service) => (
+                  <Group
+                    key={service._id}
+                    src={service.img}
+                    title={service.title}
+                  />
+                ))}
+              </>
+            </div>
           </div>
         </div>
       )}
+
       <div style={{ position: "fixed", width: "375px", bottom: "0" }}>
         <Footer />
       </div>
