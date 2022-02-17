@@ -49,10 +49,6 @@ button, input, textarea {
   color: #232323;
 }
 
-.service-product {
-  margin-left: 16px;
-}
-
 .service-product .Group-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
