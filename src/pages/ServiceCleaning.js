@@ -49,6 +49,7 @@ export default function ServiceCleaning() {
                       imgLocation=""
                       rateImg=""
                       rateVal=""
+                      currency={service.currency}
                     />
                   </div>
 
@@ -86,6 +87,7 @@ export default function ServiceCleaning() {
                     imgLocation=""
                     rateImg=""
                     rateVal=""
+                    currency={service.currency}
                   />
                 </div>
 
