@@ -27,6 +27,7 @@ export default function ServiceProduct() {
             <div style={{ display: "flex" }}>
               <img src="/images/MaskGroup1.png" alt="" />
               <h5>Qatar 2022</h5>
+              <div className="new">New</div>
             </div>
             <a href="/">View all</a>
           </div>
