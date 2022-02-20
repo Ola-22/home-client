@@ -1,10 +1,33 @@
 @import "../styles/variable";
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .flexBox{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
+}
+
+.App{
+  // width: 375px;
+  @extend .flexBox;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title-pages{
+  font-size: 14px;
+  color: #232323;
+  margin-top: 29px;
+  margin-left: 15px;
+}
+
+a{
+  text-decoration: none;
 }
 
 button, input, textarea{
