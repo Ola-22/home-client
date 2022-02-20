@@ -4,7 +4,7 @@ import ServiceProduct from "../Components/ServiceProduct";
 import { useContext, useState } from "react";
 import { DataContext } from "../Context/DataProvider";
 
-function HomePage({ onChange }) {
+function HomePage() {
   const value = useContext(DataContext);
   const [services] = value.services;
 

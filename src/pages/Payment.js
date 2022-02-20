@@ -67,7 +67,10 @@ export default function Payment() {
                   style={{ width: "149px" }}
                 />
               </div>
-              <button style={{ marginTop: "24px" }} className="requestBtn">
+              <button
+                style={{ marginTop: "24px", marginBottom: "5em" }}
+                className="requestBtn"
+              >
                 Confirm Request
               </button>
             </div>

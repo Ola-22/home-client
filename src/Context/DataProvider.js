@@ -72,7 +72,8 @@ export default function DataProvider(props) {
         paragraph:
           "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ",
         review: "(62 Review)",
-        price: "180 QAR",
+        price: "180",
+        currency: "QAR",
         serviceClean: [
           {
             _id: "1",
@@ -82,7 +83,8 @@ export default function DataProvider(props) {
             paragraph:
               "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no",
             review: "(62 Review)",
-            price: "180 QAR",
+            price: "180",
+            currency: "QAR",
           },
           {
             _id: "2",
@@ -92,7 +94,8 @@ export default function DataProvider(props) {
             paragraph:
               "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no",
             review: "(63 Review)",
-            price: "300 QAR",
+            price: "180",
+            currency: "QAR",
           },
           {
             _id: "3",
@@ -102,7 +105,8 @@ export default function DataProvider(props) {
             paragraph:
               "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no",
             review: "(62 Review)",
-            price: "499 QAR",
+            price: "180",
+            currency: "QAR",
           },
         ],
       },
@@ -117,7 +121,8 @@ export default function DataProvider(props) {
         paragraph:
           "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ",
         review: "(50 Review)",
-        price: "180 QAR",
+        price: "180",
+        currency: "QAR",
       },
       {
         _id: "3",
@@ -130,7 +135,8 @@ export default function DataProvider(props) {
         paragraph:
           "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ",
         review: "(42 Review)",
-        price: "180 QAR",
+        price: "180",
+        currency: "QAR",
       },
       {
         _id: "4",
@@ -143,7 +149,8 @@ export default function DataProvider(props) {
         paragraph:
           "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ",
         review: "(62 Review)",
-        price: "180 QAR",
+        price: "180",
+        currency: "QAR",
       },
       {
         _id: "5",
@@ -156,7 +163,8 @@ export default function DataProvider(props) {
         paragraph:
           "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ",
         review: "(22 Review)",
-        price: "180 QAR",
+        price: "180",
+        currency: "QAR",
       },
     ],
 

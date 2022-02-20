@@ -13,6 +13,7 @@ export default function Card({
   rateVal,
   review,
   price,
+  currency,
 }) {
   return (
     <>
@@ -33,7 +34,10 @@ export default function Card({
           <span>{review}</span>
         </div>
         <div>
-          <h4>{price}</h4>
+          <h4>
+            {price}
+            <span style={{ marginLeft: "6px" }}>{currency}</span>
+          </h4>
         </div>
       </div>
       <p className="paragraph">{paragraph}</p>

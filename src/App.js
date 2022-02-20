@@ -1,4 +1,3 @@
-import "./App.css";
 import DataProvider from "./Context/DataProvider";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomeServices from "./pages/HomeServices";
@@ -10,7 +9,7 @@ import Request from "./pages/Request";
 import Payment from "./pages/Payment";
 import "./styles/main.scss";
 
-function App({ onChange }) {
+function App() {
   return (
     <DataProvider>
       <div className="App">
@@ -23,7 +22,7 @@ function App({ onChange }) {
             <Route path="/request" element={<Request />} />
             <Route path="/payment" element={<Payment />} />
 
-            <Route path="/" element={<HomePage onChange={onChange} />} />
+            <Route path="/" element={<HomePage />} />
           </Routes>
         </BrowserRouter>
       </div>
