@@ -38,6 +38,11 @@ export default function HomeDetails() {
                   address={service.address}
                   imgLocation="/images/Location.png"
                   price={service.price}
+                  currency={service.currency}
+                  paragraph=""
+                  rateImg=""
+                  rateVal=""
+                  review=""
                 />
               </Link>
             </div>
@@ -57,6 +62,11 @@ export default function HomeDetails() {
                   address={service.address}
                   imgLocation="/images/Location.png"
                   price={service.price}
+                  currency={service.currency}
+                  paragraph=""
+                  rateImg=""
+                  rateVal=""
+                  review=""
                 />
               </Link>
             </div>
