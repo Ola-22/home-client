@@ -56,6 +56,10 @@ export default function Services() {
               rateImg="/images/star.png"
               rateVal={service.Rating}
               review={service.review}
+              rating=""
+              ratings=""
+              price=""
+              currency=""
             />
           </div>
         ))}
@@ -81,6 +85,11 @@ export default function Services() {
                       paragraph={service.paragraph}
                       price={service.price}
                       review={service.review}
+                      currency={service.currency}
+                      address=""
+                      imgLocation=""
+                      rateImg=""
+                      rateVal=""
                     />
                   </div>
                 </Link>
@@ -104,6 +113,11 @@ export default function Services() {
                       paragraph={service.paragraph}
                       price={service.price}
                       review={service.review}
+                      currency={service.currency}
+                      address=""
+                      imgLocation=""
+                      rateImg=""
+                      rateVal=""
                     />
                   </div>
                 </Link>
